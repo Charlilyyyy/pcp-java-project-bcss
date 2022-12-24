@@ -30,6 +30,7 @@ public class DominoPiling {
         }
         else{
             System.out.print("Block size is too big");
+            System.out.print("\n");
         }
         System.out.println("Enter 1 to continue , 0 to exit to main" + "\n");
 		int cont = sc.nextInt();

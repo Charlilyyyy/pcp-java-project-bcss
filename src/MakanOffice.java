@@ -5,14 +5,14 @@ public class MakanOffice {
     	System.out.println("<----------WELCOME TO MAKAN OFFICE!---------->" + "\n");
         Scanner sc = new Scanner(System.in);
         double unit1,unit2, donation1, donation2, total_month, infaq1, infaq2, balance1, balance2;
-        System.out.print("Enter person: ");
+        System.out.print("Enter number person: ");
         unit1 = sc.nextDouble();
         donation1 = unit1*10;
-        System.out.println("Total Donation per day is RM "+donation1);
-        System.out.print("Enter person: ");
+        System.out.println("Total Donation per week is RM "+donation1);
+        System.out.print("Enter number person: ");
         unit2 = sc.nextDouble();
         donation2 = unit2*15;
-        System.out.println("Total Donation per day is RM "+donation2);
+        System.out.println("Total Donation per week is RM "+donation2);
         total_month = (donation1+donation2)*4;
         System.out.println("Total Monthly is RM "+total_month);
         
@@ -27,7 +27,7 @@ public class MakanOffice {
             balance2 = total_month-infaq2;
             System.out.println("Balance for makan-makan is RM "+balance2);
         }else{
-        System.out.println("We can go makan-makan!!!!"); 
+        System.out.println("We can go makan-makan!!!!" + total_month); 
         }  
         System.out.println("Enter 1 to continue , 0 to exit to main" + "\n");
 		int cont = sc.nextInt();
